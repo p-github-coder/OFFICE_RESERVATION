@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Office Reserve</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  
+  <nav class="bg-blue-700 text-white shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold">Office Reserve</h1>
+
+      <ul class="flex gap-8 text-lg font-medium">
+        <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+        <li><a href="book-room.html" class="hover:text-gray-200">Book Room</a></li>
+        <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  
+  <section class="pt-36 pb-16 bg-blue-700 text-white text-center">
+    <h1 class="text-5xl font-bold mb-5">Contact Us</h1>
+    <p class="text-lg text-gray-200">
+      Have questions or need support? We are here to help.
+    </p>
+  </section>
+
+  
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+
+      
+      <div class="bg-white rounded-3xl shadow-xl p-10">
+
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">
+          Get in Touch
+        </h2>
+
+        <p class="text-gray-600 mb-8 leading-relaxed">
+          Reach out for booking issues, technical help, or inquiries.
+        </p>
+
+        <div class="space-y-6 text-gray-700">
+
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-phone text-blue-700 text-xl"></i>
+            <span>+234 800 000 0000</span>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-envelope text-blue-700 text-xl"></i>
+            <span>support@officereserve.com</span>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-location-dot text-blue-700 text-xl"></i>
+            <span>Abuja, Nigeria</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-10">
+
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">
+          Send a Message
+        </h2>
+
+        <form id="contact_form" class="space-y-6">
+
+          
+          <div>
+            <label class="block mb-2 font-semibold text-gray-700">Full Name</label>
+            <input id="contact_name"
+              type="text"
+              placeholder="Enter your name"
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+            <p id="contact_name_error" class="text-red-500 text-sm"></p>
+          </div>
+
+          
+          <div>
+            <label class="block mb-2 font-semibold text-gray-700">Email Address</label>
+            <input id="contact_email"
+              type="email"
+              placeholder="Enter your email"
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+            <p id="contact_email_error" class="text-red-500 text-sm"></p>
+          </div>
+
+          
+          <div>
+            <label class="block mb-2 font-semibold text-gray-700">Subject</label>
+            <input id="contact_subject"
+              type="text"
+              placeholder="Message subject"
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 outline-none"
+            />
+            <p id="contact_subject_error" class="text-red-500 text-sm"></p>
+          </div>
+
+          
+          <div>
+            <label class="block mb-2 font-semibold text-gray-700">Message</label>
+            <textarea id="contact_message"
+              rows="5"
+              placeholder="Write your message..."
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+            ></textarea>
+            <p id="contact_message_error" class="text-red-500 text-sm"></p>
+          </div>
+
+          
+          <button id="contact_btn"
+            type="submit"
+            class="w-full bg-blue-700 hover:bg-blue-800 text-white py-4 rounded-xl font-semibold text-lg transition"
+          >
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+  <footer class="bg-blue-700 text-white py-8">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h2 class="text-2xl font-bold mb-3">
+        Office Reserve
+      </h2>
+
+      <p class="text-gray-200 mb-5">
+        Smart and efficient office room reservation system.
+      </p>
+
+      
+      <div class="flex justify-center gap-6 text-2xl mb-6">
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+      </div>
+
+      <p class="text-sm text-gray-300">
+        © 2026 Office Reserve. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+</body>
+<script src="./contact.js"></script>
+</html>

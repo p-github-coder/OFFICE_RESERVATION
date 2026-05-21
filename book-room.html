@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Room - Office Reserve</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  
+  <nav class="bg-blue-700 text-white shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold">
+        Office Reserve
+      </h1>
+
+      <ul class="flex gap-8 text-lg font-medium">
+        <li>
+          <a href="index.html" class="hover:text-gray-200 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="book-room.html" class="hover:text-gray-200 transition">
+            Book Room
+          </a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="hover:text-gray-200 transition">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  
+  <section class="pt-36 pb-16 bg-blue-700 text-white text-center">
+
+    <h1 class="text-5xl font-bold mb-5">
+      Book a Conference Room
+    </h1>
+
+    <p class="text-lg text-gray-200">
+      Fill in your details to reserve a meeting room.
+    </p>
+
+  </section>
+
+  
+  <section class="py-20">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="bg-white rounded-3xl shadow-xl p-10">
+
+        <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">
+          Reservation Form
+        </h2>
+
+        <form class="space-y-8">
+
+          
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Full Name
+              </label>
+
+              <input id="full_name"
+                type="text"
+                placeholder="Enter your full name"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="full_name_error"></span>
+            </div>
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Department
+              </label>
+
+              <input id="dept_input"
+                type="text"
+                placeholder="Enter department"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="dept_input_error"></span>
+            </div>
+
+          </div>
+
+          
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Phone Number
+              </label>
+
+              <input id="number_input"
+                type="tel"
+                placeholder="Enter phone number"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="number_input_error"></span>
+            </div>
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Email Address
+              </label>
+
+              <input id="email_input"
+                type="email"
+                placeholder="Enter email address"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="email_input_error"></span>
+            </div>
+
+          </div>
+
+          
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Booking Date
+              </label>
+
+              <input id="date_input"
+                type="date"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="date_input_error"></span>
+            </div>
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Booking Time
+              </label>
+
+              <input id="time_input"
+                type="time"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <span id="time_input_error"></span>
+            </div>
+
+          </div>
+
+          
+          <div class="grid md:grid-cols-2 gap-8">
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Meeting Duration
+              </label>
+
+              <select id="duration_input"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Duration</option>
+               <option value="30">30 Minutes</option>
+               <option value="60">1 Hour</option>
+               <option value="120">2 Hours</option>
+              </select>
+              <span id="duration_input_error"></span>
+            </div>
+
+            <div>
+              <label class="block mb-3 text-lg font-semibold">
+                Room Type
+              </label>
+
+              <select id="type_input"
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Room Type</option>
+                <option value="small">Small Room</option>
+                <option value="medium">Medium Room</option>
+                <option value="large">Large Room</option>
+              </select>
+              <span id="type_input_error"></span>
+            </div>
+
+          </div>
+
+          <div>
+
+            <label class="block mb-3 text-lg font-semibold">
+              Available Conference Rooms
+            </label>
+
+            <select id="available_input"
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">Select Available Room</option>
+              <option value="a">Conference Room A</option>
+              <option value="b">Conference Room B</option>
+              <option value="c">Conference Room C</option>
+            </select>
+            <span id="available_input_error"></span>
+          </div>
+
+          
+          <div>
+
+            <label class="block mb-3 text-lg font-semibold">
+              Additional Notes
+            </label>
+
+            <textarea id="message_input"
+              rows="5"
+              placeholder="Enter meeting purpose or additional requests..."
+              class="w-full border border-gray-300 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+            ></textarea>
+            <span id="message_input_error"></span>
+
+          </div>
+
+          
+          <button id="btn_submit"
+            type="submit"
+            class="w-full bg-blue-700 hover:bg-blue-800 text-white py-4 rounded-xl text-lg font-semibold transition duration-300"
+          >
+            Reserve Room
+          </button>
+
+          <h3 id="result"></h3>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  
+  <section class="pb-20">
+
+  <div class="max-w-5xl mx-auto px-6">
+
+    <div class="bg-white rounded-3xl shadow-xl p-10">
+
+      <h2 class="text-4xl font-bold text-gray-800 mb-10 text-center">
+        Booking Summary
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Employee Name
+          </h3>
+
+          <p id="summary_name" class="text-gray-600"></p>
+        </div>
+
+        
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Department
+          </h3>
+
+          <p id="summary_dept" class="text-gray-600"></p>
+        </div>
+
+        
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Booking Date
+          </h3>
+
+          <p id="summary_date" class="text-gray-600"></p>
+        </div>
+
+       
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Booking Time
+          </h3>
+
+          <p id="summary_time" class="text-gray-600"></p>
+        </div>
+
+        
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Duration
+          </h3>
+
+          <p id="summary_duration" class="text-gray-600"></p>
+        </div>
+
+        
+        <div>
+          <h3 class="font-bold text-lg mb-2">
+            Selected Room
+          </h3>
+
+          <p id="summary_room" class="text-gray-600"></p>
+        </div>
+
+      </div>
+
+      
+      <button
+        class="mt-10 w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-xl text-lg font-semibold transition duration-300"
+      >
+        Confirm Booking
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  
+  <footer class="bg-blue-700 text-white py-8">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h2 class="text-2xl font-bold mb-3">
+        Office Reserve
+      </h2>
+
+      <p class="text-gray-200 mb-5">
+        Smart and efficient office room reservation system.
+      </p>
+
+      <!-- SOCIAL ICONS -->
+      <div class="flex justify-center gap-6 text-2xl mb-6">
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="#" class="hover:text-gray-300 transition">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+      </div>
+
+      <p class="text-sm text-gray-300">
+        © 2026 Office Reserve. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
